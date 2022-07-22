@@ -167,7 +167,7 @@ body{
 }
 
 
-@media (min-width: 201px) and (max-width: 500px),(min-device-width: 201px) and (max-device-width: 500px) {
+@media (min-width: 201px) and (max-width: 500px) {
     body{
         padding: 110px 20px 20px 20px;
     }
@@ -231,5 +231,78 @@ body{
         font-size: 20px;
         font-family: Arial;
 
+    }
+  }
+
+
+  @media (min-device-width: 201px) and (max-device-width: 500px) {
+    body{
+        padding: 110px 20px 20px 20px;
+    }
+    .header{
+        height: 100px;
+    }
+    .menu,
+    .searchbox,
+    .voicebutton,
+    .voicesearch,
+    .youtubeapp-container,
+    .upload-container{
+        display: none;
+    }
+    .logo{
+        width:250px;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+
+
+    .mids{
+        display: flex;
+        align-items: flex-end;
+        flex: 1;   
+        margin-left: 400px;
+        margin-right: 0;
+        max-width: 500px;
+    }
+    .searchbar{
+        height: 70px;
+    }
+    .searchbutton{
+        width: 0;
+        height: 0;
+        border: none;
+        background-color: transparent;
+    }
+    .searchbutton:hover{
+        background-color: transparent;
+    }
+    .rights{
+        width: 200px;
+    }
+    .notify{
+        width:70px;
+    }
+    .personal{
+        width: 90px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .notifycontainer{
+        position: relative;
+    }
+    .notifycount{
+        position: absolute;
+        top: -4px;
+        right: -1px;
+        text-align: center;
+        font-size: 30px;
+        padding: 5px 7px;
+        font-family: Arial;
+
+    }
+    .tooltip{
+        display: none;
     }
   }

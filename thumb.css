@@ -89,3 +89,41 @@ p{
 }
 
 
+@media  (max-device-width:500px){
+    .wholevideoarea{
+        grid-template-columns: 1fr;
+    } 
+    .channel{
+        width: 100px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .subch{
+        vertical-align: top;
+        padding: 10px;
+    }
+    .subtit{
+        margin-left: 70px;
+    }
+    .author{
+        display: inline;
+    }
+    .timer{
+        background-color: black;
+        color: white;
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        font-size: 30px;
+        font-weight: 500;
+        padding: 4px;
+        border-radius: 2px;
+    }
+}
+@media (min-device-width: 501px) and (max-device-width: 800px){
+    .wholevideoarea{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
