@@ -73,6 +73,7 @@
         cursor: pointer;
         width: 100%;
         top: initial;
+        padding: 10px 0;
     }
     .sidebar-tooltip{
         width: 80%;
