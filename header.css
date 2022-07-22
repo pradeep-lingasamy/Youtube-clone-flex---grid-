@@ -1,0 +1,235 @@
+body{
+    margin: 0px;
+    padding-top: 80px;
+    padding-left: 90px;
+    background-color: rgb(240, 240, 240);
+    font-family: Arial;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 55px;
+    align-items: center;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background-color: white;
+    border-bottom: 1px solid rgb(212, 211, 211);
+    z-index: 100;
+}
+
+.lefts{
+    display: flex;
+}
+.menu{
+    height: 25px;
+    margin-left: 24px;
+    margin-right: 24px;
+    cursor: pointer;
+    
+}
+.logo{
+    width:90px;
+    cursor: pointer;
+}
+
+.mids{
+    display: flex;
+    align-items: center;
+    flex: 1;   
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+}
+
+.searchbox{
+    flex:1;
+    height: 35px;
+    border: 1px solid rgb(192, 192, 192);
+    min-width: 0px;
+    padding-left: 10px;
+    border-radius: 2px 0 0 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0;
+    z-index: 2;
+}
+.searchbox:focus{
+    outline: none;
+    border: 1px solid rgb(0, 0, 218);
+    z-index: 1;
+}
+
+
+
+.searchbutton{
+    border: 1px solid rgb(192, 192, 192);
+    margin-left: -1.5px;
+    margin-right: 10px;
+    width: 66px;
+    height: 39px;
+    cursor: pointer;
+}
+.searchbutton,
+.voicebutton,
+.upload-container,
+.youtubeapp-container,
+.notifycontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.searchbutton .tooltip,
+.voicebutton .tooltip,
+.upload-container .tooltip,
+.youtubeapp-container .tooltip,
+.notifycontainer .tooltip{
+    position: absolute;
+    background-color: rgb(92, 92, 92);
+    color: white;
+    padding: 8px;
+    font-size: 12px;
+    font-family: Arial;
+    bottom: -45px;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.15s ;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.searchbutton:hover .tooltip,
+.voicebutton:hover .tooltip,
+.upload-container:hover .tooltip,
+.youtubeapp-container:hover .tooltip,
+.notifycontainer:hover .tooltip{
+    opacity: 0.8;
+}
+
+.searchbutton:hover{
+    background-color: rgb(230, 230, 230);;
+}
+
+.searchbar{
+    height: 20px;
+}
+.voicebutton{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(248, 248, 248);
+    cursor: pointer;
+}
+.voicesearch{
+    height: 24px;
+}
+
+.rights{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    width: 180px;
+    margin-right: 20px;
+}
+
+.upload,
+.apps{
+    width: 25px;
+    cursor: pointer;
+}
+.notify{
+    width: 25px;
+    cursor: pointer;
+}
+.personal{
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.notifycontainer{
+    position: relative;
+}
+.notifycount{
+    position: absolute;
+    background-color: rgb(197, 48, 48);
+    top: -3px;
+    right: -5px;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 5px 2px 5px;
+    font-size: 11px;
+    font-family: Arial;
+}
+
+
+@media (min-width: 201px) and (max-width: 500px),(min-device-width: 201px) and (max-device-width: 500px) {
+    body{
+        padding: 110px 20px 20px 20px;
+    }
+    .header{
+        height: 70px;
+    }
+    .menu,
+    .searchbox,
+    .voicebutton,
+    .voicesearch,
+    .youtubeapp-container,
+    .upload-container{
+        display: none;
+    }
+    .mids{
+        display: flex;
+        align-items: flex-end;
+        flex: 1;   
+        margin-left: 200px;
+        margin-right: 0;
+        max-width: 500px;
+    }
+    .searchbar{
+        height: 30px;
+    }
+    .searchbutton{
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        background-color: transparent;
+        
+
+    }
+
+    .logo{
+        padding-left: 5px;
+        width:100px;
+    }
+    .rights{
+        width: 100px;
+    }
+    .notify,
+    .personal{
+        width:30px;
+    }
+    .personal{
+        width: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .notifycontainer{
+        position: relative;
+    }
+    .notifycount{
+        position: absolute;
+        top: -4px;
+        right: -1px;
+        text-align: center;
+        font-size: 20px;
+        font-family: Arial;
+
+    }
+  }
